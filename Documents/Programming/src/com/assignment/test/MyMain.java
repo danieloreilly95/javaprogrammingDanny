@@ -107,6 +107,18 @@ public class MyMain
             }//end if
         }//end while
        
+        //sort the arrayList in reverse order and remove any unhelpful words 
+        Collections.sort(counter);
+        Collections.reverse(counter);
+        textwords.remove("a");
+        textwords.remove("this");
+        textwords.remove("i");
+        textwords.remove("to");
+        textwords.remove("and");
+        textwords.remove("or");
+        textwords.remove("of");
+        textwords.remove("in");
+        textwords.remove("the");
         
         //Print the results of the array list using a for loop  
         for (int i = 0;i<10;i++)
