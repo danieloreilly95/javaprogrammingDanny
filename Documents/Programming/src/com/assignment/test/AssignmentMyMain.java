@@ -98,7 +98,7 @@ public class AssignmentMyMain
         textwords.remove("the");
         textwords.remove("an");
         
-        //I THEN PRINT THE 10 MOST COMMON WORDS IN REVERSE ORDER 
+        //I THEN PRINT THE 10 MOST COMMON WORDS IN REVERSE ORDER.
         
         //Print the results of the array list using a for loop  
         for (int i = 0;i<10;i++)
