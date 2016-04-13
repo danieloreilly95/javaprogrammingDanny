@@ -72,5 +72,5 @@ public class AssignmentControl  extends AssignmentMyMain
 	
 	//Thank you ! :-) 
 		    	
-}	    	//oh yes my gui pops up after the console ! 
+}	    	
 		    	
