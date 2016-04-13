@@ -67,9 +67,10 @@ public class MyMain
         boolean newWords;
        
         //Load just the first word from the file in to start
+        //Stores the file and reads it in 
         keep = newfile.next();
-        keep = keep.replaceAll("[^a-zA-Z]+", "");
-        keep = keep.toLowerCase();
+        keep = keep.replaceAll("[^a-zA-Z]+", ""); 
+        keep = keep.toLowerCase();//converts to lowercase 
         textwords.add(keep);
         counter.add(1);
        
@@ -91,7 +92,7 @@ public class MyMain
                 //If a word was found in the ArrayList increment it and say it was found
                 if (words.equals(string))
                 {
-                    Integer values = counter.get(searches);
+                    int values = counter.get(searches);
                     values++; //a value that is added next to the words
                     counter.set(searches, values);
                     newWords = false;
@@ -119,6 +120,7 @@ public class MyMain
         textwords.remove("of");
         textwords.remove("in");
         textwords.remove("the");
+        textwords.remove("an");
         
         //Print the results of the array list using a for loop  
         for (int i = 0;i<10;i++)
