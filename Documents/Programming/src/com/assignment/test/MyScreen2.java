@@ -9,11 +9,12 @@ import javax.swing.JOptionPane;
 
 import javax.swing.JTextField;
 
-
+//
 public class MyScreen2 extends JFrame implements ActionListener
 
 	{
-		
+		//MY GUI DOESN'T WORK :-(
+	//BUT I INCLUDED WHAT I HAD DONE ANYWAY 
 		JButton button1;
 		JLabel myLabel1;
 		JTextField text1;
@@ -24,13 +25,13 @@ public class MyScreen2 extends JFrame implements ActionListener
 		{
 			super(title);
 			setLayout(new FlowLayout());
-			myLabel1 = new JLabel("Enter a file name");
+			myLabel1 = new JLabel("Enter a file path");
 			add(myLabel1);
 			myLabel1.setLocation(40,100);
 			
 			text1 = new JTextField("Enter a file ");
 			add(text1);
-			text1.setColumns(20);
+			text1.setColumns(20); //size of text box 
 	
 			button1 = new JButton("Click here");
 			button1.addActionListener(this);
